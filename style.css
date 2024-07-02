@@ -1,0 +1,37 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121; /* Light gray background */
+    padding: 5px; /* Add padding to body */
+}
+
+/* Container styles */
+.bappa {
+    max-width: auto; /* Limit container width */
+    margin: 0 auto; /* Center align container */
+    background-color: #212121; /* White background */
+    padding: 1px; /* Add padding inside container */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Image styles */
+.bappa img {
+    display: block; /* Ensure image is block level for margin auto */
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain image aspect ratio */
+    margin: 0 auto; /* Center align image */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .bappa {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+}
